@@ -10,4 +10,4 @@ This is a sample project designed to teach game development at the entry level.
 
 https://github.com/user-attachments/assets/1b496895-f1b8-4185-b99c-6945a0e2e1b8
 
-"Demo Levek 2 (soon)*
+**Demo Level 2 (soon)**
