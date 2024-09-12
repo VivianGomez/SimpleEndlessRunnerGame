@@ -17,4 +17,5 @@ public class MovimientoCubo : MonoBehaviour
         Vector3 velocidad = new Vector3(0, 0, -rapidez);
         rb.velocity = velocidad;
     }
+
 }
