@@ -25,3 +25,5 @@ https://github.com/user-attachments/assets/63672070-6579-4e97-9074-f952a19374c0
 - Adding sounds
 - Adding simple animations
   Sounds:https://drive.google.com/drive/folders/1Mlnm7KnGYNaX4Jq_0qVxquSPLXgYQwRZ?usp=drive_link
+  
+https://github.com/user-attachments/assets/7e2e8942-8315-40c9-a00a-d241738e2f37
