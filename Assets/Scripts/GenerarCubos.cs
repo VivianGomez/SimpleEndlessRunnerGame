@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class GenerarCubos : MonoBehaviour
 {
-    public GameObject cuboPrefab;
+    public GameObject obstaculoPrefab;
+
     public Transform posicionGeneradora;
-    public Transform[] otrasPosiciones;
+    public Transform[] otrasPosiciones; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,13 +15,13 @@ public class GenerarCubos : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("level") == 1)
             {
-                Instantiate(cuboPrefab, posicionGeneradora.position, Quaternion.identity);
+                Instantiate(obstaculoPrefab, posicionGeneradora.position, Quaternion.identity);
             }
             else if (PlayerPrefs.GetInt("level") == 2)
             {
                 int randomIndex = Random.Range(0, otrasPosiciones.Length);
-                Instantiate(cuboPrefab, posicionGeneradora.position, Quaternion.identity);
-                Instantiate(cuboPrefab, otrasPosiciones[randomIndex].position, Quaternion.identity);
+                Instantiate(obstaculoPrefab, posicionGeneradora.position, Quaternion.identity);
+                Instantiate(obstaculoPrefab, otrasPosiciones[randomIndex].position, Quaternion.identity);
             }
         }
     }

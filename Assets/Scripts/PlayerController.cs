@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody rb;
-
 
     public TextMeshProUGUI txtPuntos;
     public float score;
 
     bool finJuego = false;
     public GameObject panelFinJuego;
+
+    public AudioClip sonidoPremio;
+    public AudioClip sonidoObstaculo;
 
     void Start()
     {
@@ -46,7 +48,15 @@ public class PlayerController : MonoBehaviour
             DisminuirScore(PlayerPrefs.GetInt("penalizacion"));
             GameObject.Find("Main Camera").GetComponent<Camera>().backgroundColor = Color.red;
             Destroy(other.gameObject);
+            GetComponent<Animator>().Play("Chocar");
+            AudioSource.PlayClipAtPoint(sonidoObstaculo, transform.position);
             StartCoroutine(CambiarColorCamara());
+        }
+        else if (other.name.Contains("Premio"))
+        {
+            AumentarScore(5);
+            AudioSource.PlayClipAtPoint(sonidoPremio, transform.position);
+            Destroy(other.gameObject);
         }
     }
 
@@ -60,5 +70,10 @@ public class PlayerController : MonoBehaviour
     public void DisminuirScore(float penalizacion)
     {
         score -= penalizacion;
+    }
+
+    public void AumentarScore(float aumento)
+    {
+        score += aumento;
     }
 }
