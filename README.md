@@ -17,5 +17,7 @@ https://github.com/user-attachments/assets/1b496895-f1b8-4185-b99c-6945a0e2e1b8
 - Feedback on triggering obstacles
 - Detection of game completion
 
+- Resources: https://drive.google.com/drive/folders/1Mlnm7KnGYNaX4Jq_0qVxquSPLXgYQwRZ?usp=sharing 
+
 
 https://github.com/user-attachments/assets/63672070-6579-4e97-9074-f952a19374c0
