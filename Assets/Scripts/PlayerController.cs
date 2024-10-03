@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         float movimientoHorizontal = Input.GetAxis("Horizontal") * 5;
-        rb.velocity = new Vector3 (movimientoHorizontal, rb.velocity.y, rb.velocity.z);
+        rb.velocity = new Vector3(movimientoHorizontal, rb.velocity.y, rb.velocity.z);
+        GetComponent<Animator>().SetTrigger("running");
     }
 
     private void OnTriggerEnter(Collider other)
