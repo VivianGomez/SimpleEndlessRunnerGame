@@ -27,3 +27,11 @@ https://github.com/user-attachments/assets/63672070-6579-4e97-9074-f952a19374c0
   Sounds:https://drive.google.com/drive/folders/1Mlnm7KnGYNaX4Jq_0qVxquSPLXgYQwRZ?usp=drive_link
   
 https://github.com/user-attachments/assets/7e2e8942-8315-40c9-a00a-d241738e2f37
+
+**Demo Class 4**
+- Adding 3D animarions 
+- Addion 3D models
+- Addition of GUI images and Sprites
+
+https://github.com/user-attachments/assets/bbbcce2b-7c63-426e-99f2-884261be5770
+
